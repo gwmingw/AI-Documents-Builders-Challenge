@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyeongwon Min | Portfolio</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+  <!-- Font Awesome 아이콘 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 고정 내비게이션 ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">Gyeongwon Min</a>
+      <nav class="nav-links" aria-label="주요 섹션">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="다크모드 전환">
+          <i class="fa-solid fa-sun icon-sun"></i>
+          <i class="fa-solid fa-moon icon-moon"></i>
+        </button>
+      </nav>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== 히어로 섹션 ===== -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg-text" aria-hidden="true">Precision · Innovation · Impact</div>
+      <div class="container hero-content fade-in">
+        <p class="hero-label">Portfolio</p>
+        <h1 class="hero-name">Gyeongwon Min</h1>
+        <h2 class="hero-headline">산업공학과 데이터 과학을 융합하는 차세대 엔지니어</h2>
+        <p class="hero-desc">
+          안녕하세요, 저는 성균관대학교 시스템경영공학(산업공학) 전공 3학년으로,
+          <strong>data-driven</strong> 문제 해결에 열정을 가진 인재입니다.
+          현장 멘토링과 AI 교육을 통해 이론을 실제 현장에 적용하며 지속 가능한 가치를 만들고 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== About 섹션 ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">About</span>
+          <h2 class="section-title">저를 소개합니다</h2>
+        </div>
+        <article class="card about-card fade-in">
+          <p>
+            저는 <strong>산업공학</strong>을 전공하고 있는 대학생입니다. 학업에서는
+            <strong>응용통계, 실험계획법, 스마트팩토리</strong> 등 실무와 직결되는 과목을 이수했으며,
+            GPA 3.95(전반)와 4.16(전공)로 학업 성취도를 꾸준히 유지하고 있습니다.
+          </p>
+          <p>
+            대학 생활 외에도 <strong>청소년 멘토링</strong>과 <strong>AI 교육 캠프</strong>에 참여하며,
+            복잡한 이론을 쉬운 실습으로 바꾸는 과정을 즐깁니다.
+            저는 “문제 → 데이터 → 인사이트 → 실행”이라는 흐름을 통해
+            <strong>효율적·신뢰성 높은 솔루션</strong>을 만들고자 합니다.
+          </p>
+          <p>
+            앞으로도 끊임없는 학습과 현장 적용을 통해 <strong>산업 현장의 혁신을 주도</strong>하고 싶습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Education 섹션 (타임라인) ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Education</span>
+          <h2 class="section-title">학력</h2>
+        </div>
+        <div class="timeline fade-in">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="badge">Mar 2021 – Feb 2028 (Expected)</span>
+              <h3>SungKyunKwan University, Suwon, Korea</h3>
+              <p class="timeline-subtitle">Bachelor of Science in System Management Engineering</p>
+              <ul>
+                <li>GPA 3.95/4.5 (overall)</li>
+                <li>GPA 4.16/4.5 (major)</li>
+                <li>Relevant coursework: Applied Statistics, Design of Experiments, Data Science, Operations Research, Operations Management, Smart Factory</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects 섹션 (카드 그리드) ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">핵심 프로젝트</h2>
+        </div>
+        <div class="card-grid fade-in">
+
+          <article class="card project-card">
+            <h3>Capstone Design – PLC 기반 이상 진단</h3>
+            <p class="card-meta">Mar 2026 – Jun 2026</p>
+            <ul>
+              <li>PLC 운영 데이터를 실시간 수집·분석해 이상 진단 모델 구축</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">PLC</span>
+              <span class="tag">Anomaly Diagnosis</span>
+              <span class="tag">Industrial IoT</span>
+              <span class="tag">Data Analytics</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <h3>Smart Car Engineering – 교통 신호 인식</h3>
+            <p class="card-meta">Dec 2025 – Jan 2026</p>
+            <ul>
+              <li>OpenCV와 Python을 활용한 영상 전처리 파이프라인 구현</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Autonomous Driving</span>
+              <span class="tag">Image Processing</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <h3>Robust System Design – 베어링 고장 예측 CNN</h3>
+            <p class="card-meta">Jul 2025 – Aug 2025</p>
+            <ul>
+              <li>진동 데이터를 신호처리하고 CNN 모델을 설계·훈련해 고장을 사전 예측</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">CNN</span>
+              <span class="tag">Predictive Maintenance</span>
+              <span class="tag">Manufacturing</span>
+              <span class="tag">Smart Factory</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience 섹션 (카드 그리드) ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Experience</span>
+          <h2 class="section-title">활동 경험</h2>
+        </div>
+        <div class="card-grid fade-in">
+
+          <article class="card exp-card">
+            <h3>Mentor</h3>
+            <p class="card-meta">Youth Al Project · Apr 2026 – Aug 2026 (Expected)</p>
+            <ul>
+              <li>고등학생에게 AI 에이전트 개발 프로젝트 지도</li>
+              <li>멘토-멘티 간 피드백 루프 구축</li>
+            </ul>
+          </article>
+
+          <article class="card exp-card">
+            <h3>Participant</h3>
+            <p class="card-meta">SK AI Dream Camp · Jul 2025 – Aug 2025</p>
+            <ul>
+              <li>8주간 AI·데이터 과학 집중 교육 수료</li>
+              <li>LTE 기지국 데이터 기반 이상 탐지 프로젝트 완성</li>
+            </ul>
+          </article>
+
+          <article class="card exp-card">
+            <h3>Mentor</h3>
+            <p class="card-meta">Segok Youth Study Room · Jul 2023 – Jul 2024</p>
+            <ul>
+              <li>고등학생에게 매주 영어 멘토링 제공</li>
+              <li>나눔 실천을 통해 강남구청장 표창 수상</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills 섹션 ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">기술 & 역량</h2>
+        </div>
+        <div class="skills-wrap fade-in">
+          <div class="skill-category">
+            <h3>Programming</h3>
+            <div class="tag-group">
+              <span class="tag">Python</span>
+              <span class="tag">Mathematica</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Data & Analytics</h3>
+            <div class="tag-group">
+              <span class="tag">SQLD</span>
+              <span class="tag">ADSP</span>
+              <span class="tag">Minitab</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="tag-group">
+              <span class="tag">English (OPIc IH)</span>
+              <span class="tag">Korean (native)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact & 푸터 ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">연락하기</h2>
+        </div>
+        <p class="contact-text fade-in">
+          궁금한 점이 있다면 언제든 <strong>이메일</strong>을 통해 연락 주세요.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Gyeongwon Min. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== 챗봇 ===== -->
+  <button id="chatbot-toggle" class="chatbot-toggle" aria-label="챗봇 열기">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+
+  <div id="chatbot-container" class="chatbot-container hidden">
+    <div class="chatbot-header">
+      <h3>AI 비서</h3>
+      <button id="chatbot-close" aria-label="챗봇 닫기"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="chatbot-messages" class="chatbot-messages">
+      <div class="chat-message bot">안녕하세요! 방문해 주셔서 감사합니다. 무엇이든 물어보세요!</div>
+    </div>
+    <form id="chatbot-form" class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="질문을 입력하세요..." required autocomplete="off" />
+      <button type="submit" id="chatbot-submit" aria-label="전송"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- 스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
